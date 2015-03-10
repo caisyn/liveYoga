@@ -1,6 +1,16 @@
-.lead, p, a{
+h2, h4, .lead, p, a{
 	font-family: muli, sans-serif;
 	letter-spacing: 0px;
+}
+blockquote .plaintext{
+	font-family: neuton, serif;
+	font-weight: 200;
+	font-size: 17px !important;
+}
+.plaintext{
+	font-family: neuton, serif;
+	font-weight: 200;
+	font-size: 17px;
 }
 p, a{
 	font-size: 16px;
@@ -19,7 +29,7 @@ nav.navbar{
 	margin-bottom: 0;
 }
 .navbar-brand{
-	margin-top: 11px;
+	margin-top: 10px;
 	text-indent: 30px;
 	font-size: 200%;
 	letter-spacing: .07em;
@@ -88,11 +98,11 @@ a.navbar-brand{
 	margin: 0 0 50px 0; 
 }
 .media .img-quote{
+	display: inline-block;
 	overflow: hidden;
-	height: 125px;
-	width: 106px;
-	border-right: solid 4px rgb(0,176,190);
-	padding-right: 27px;
+	margin-left: 20px;
+	height: 133px;
+	width: 133px;
 	max-height: 125px;
 }
 .well.well-lg{
@@ -104,7 +114,7 @@ a.navbar-brand{
 	background-color: #F1F1F1;
 	border: 0;
 	min-height: 300px;
-	max-height: 400px;
+	max-height: 100%;
 }
 .teachers.well-lg{
 	margin: 30px 0 30px 0;
@@ -112,9 +122,9 @@ a.navbar-brand{
 	background-color: #F1F1F1;
 	border-bottom: solid 1px #d1d1d1;
 }
-.thumbnail p{
-	font-size: 14px;
-}
-.thumbnail .caption .btn-profile{
+.teachers .thumbnail .caption .btn-profile{
 	vertical-align: bottom;
+}
+div.modal-backdrop.in.fv-modal-stack{
+	z-index: -1 !important;
 }

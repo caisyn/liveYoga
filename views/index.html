@@ -4,13 +4,13 @@
 	<meta charset="utf-8">
 	<title>MyLive Yoga</title>
 <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>-->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-route.min.js"></script>-->    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-route.min.js"></script>-->    <link rel="stylesheet" type="text/css" href="../public/css/bootswatch_yeti.min.css"/>
     <link rel="stylesheet" type="text/css" href="../public/css/index.css"/>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="../public/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../public/slick-1.4.1/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="../public/slick-1.4.1/slick/slick-theme.css"/>
-		<script src="http://use.edgefonts.net/poiret-one;muli:n3,i3,n4,i4;source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9.js"></script>
+		<script src="http://use.edgefonts.net/poiret-one;muli:n3,i3,n4,i4;neuton:n2,n3,n4,i4.js"></script>
 
 </head>
 <body>
@@ -25,9 +25,100 @@
 	    <div class="navlinks">
 	      <ul class='nav navbar-nav navbar-right'>
 	        <li class="">
-	        	<a href='login.html'>Login</a></li>
+	        	<a data-toggle="modal" href="#loginModal">Login</a>
+	        	<div class="modal" id="loginModal">
+							<div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						          <h4 class="modal-title text-center">Login</h4>
+						        </div><div class="container"></div>
+						        <div class="modal-body">
+						        	<form class="form-horizontal" method="post" action="/asfd">
+											  <fieldset>
+											    <legend>Login</legend>
+											    <div class="form-group">
+											      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+											      <div class="col-lg-10">
+											        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+											      </div>
+											    </div>
+											    <div class="form-group">
+											      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+											      <div class="col-lg-10">
+											        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+											      </div>
+											    </div>
+											    <legend></legend>
+											 		<legend>Register</legend>
+											 		<div class="form-group">
+											      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+											      <div class="col-lg-10">
+											        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+											      </div>
+											    </div>
+											    <div class="form-group">
+											      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+											      <div class="col-lg-10">
+											        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+											      </div>
+											    </div>
+											    <div class="form-group">
+											      <label for="inputPassword" class="col-lg-2 control-label">Confirm Password</label>
+											      <div class="col-lg-10">
+											        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+											      </div>
+											    </div>
+											    <div class="form-group">
+											      <label class="col-lg-2 control-label">Account Type</label>
+											      <div class="col-lg-10">
+											        <div class="radio">
+											          <label>
+											            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+											            Student
+											          </label>
+											        </div>
+											        <div class="radio">
+											          <label>
+											            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											            Instructor
+											          </label>
+											        </div>
+											      </div>
+											    </div>
+											    <div class="modal-footer">
+									          <a href="#" data-dismiss="modal" class="btn">Close</a>
+									          <a href="#" type="submit" class="btn btn-primary">Login</a>
+									        </div>
+											  </fieldset>
+											</form>
+						        </div>
+						      </div>
+						    </div>
+						</div>
+
+						<!-- <div class="modal" id="registerModal">
+							<div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						          <h4 class="modal-title">Modal 2</h4>
+						        </div><div class="container"></div>
+						        <div class="modal-body">
+						         
+						        </div>
+						        <div class="modal-footer">
+						          <a href="#" data-dismiss="modal" class="btn">Close</a>
+						          <a href="#" class="btn btn-primary">Save changes</a>
+						        </div>
+						      </div>
+						    </div>
+						</div> -->
+
+
+	        </li>
 	        <li class="">
-	        	<a data-toggle="dropdown" href='about.html' data-target="#">About <span class="caret"></span></a>
+	        	<a data-toggle="dropdown" href='about.html' data-target="#">About <span class="fa fa-caret-down"></span></a>
 	        	<ul class="dropdown-menu">
 	        		<li><a href="story.html">Our Story</a></li>
 	        		<li><a href="contact.html">Contact Us</a></li>
@@ -78,8 +169,8 @@
 		  </div>
 		  <div class="media-body">
 		    <blockquote>
-		      <p>I am a god among humans and animals alike. Also, MyLive Yoga helps me stay in shape no matter where I'm at.</p>
-		      <footer>Wesley Snipes - <cite title="Source">Film actor, producer, and martial artist</cite></footer>
+		      <p class="plaintext">I am a god among humans and animals alike. Also, MyLive Yoga helps me stay in shape no matter where I'm at.</p>
+		      <footer class="plaintext">Wesley Snipes - <i class="italicize">Film actor, producer, and martial artist</i></footer>
 		    </blockquote>
 		  </div>
 	  </div>
@@ -98,8 +189,8 @@
 			    	<div class="online-status img-circe"></div>
 			      <img class="img-circle" src="../bootbundle_f/assets/photos/randomuser.me/men2.jpg" alt="yoga instructor">
 			      <div class="caption">
-			        <h4>Joe Shmoe</h4>
-			        <p>I'm a chiropractor turned yoga nut! My favorite styles... </p>
+			        <h4>David</h4>
+			        <p class="plaintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			        <p><a href="#" class="btn btn-info btn-profile" role="button"><i class="fa fa-user"></i> Profile</a></p>
 			      </div>
 			    </div>
@@ -108,8 +199,8 @@
 			    <div class="thumbnail text-center">
 			      <img class="img-circle" src="../bootbundle_f/assets/photos/randomuser.me/women11.jpg" alt="yoga instructor">
 			      <div class="caption">
-			        <h4>Lisa Shmoe</h4>
-			        <p>Yoga is love, yoga is life. As a yoga / kung fu master...</p>
+			        <h4>Lisa</h4>
+			        <p class="plaintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			        <p><a href="#" class="btn btn-info btn-profile" role="button"><i class="fa fa-user"></i> Profile</a></p>
 			      </div>
 			    </div>
@@ -119,8 +210,8 @@
 			    <div class="thumbnail text-center">
 			      <img class="img-circle" src="../bootbundle_f/assets/photos/randomuser.me/women12.jpg" alt="yoga instructor">
 			      <div class="caption">
-			        <h4>Sally Shmoe</h4>
-			        <p>I'm a cerified yogi and I love to teach. In my classes I...</p>
+			        <h4>Celest</h4>
+			        <p class="plaintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			        <p><a href="#" class="btn btn-info btn-profile" role="button"><i class="fa fa-user"></i> Profile</a></p>
 			      </div>
 			    </div>
@@ -129,8 +220,8 @@
 			    <div class="thumbnail text-center">
 			      <img class="img-circle" src="../bootbundle_f/assets/photos/randomuser.me/men18.jpg" alt="yoga instructor">
 			      <div class="caption">
-			        <h4>Steve Shmoe</h4>
-			        <p>I'm a chiropractor turned yoga nut! My favorite styles...</p>
+			        <h4>Steven</h4>
+			        <p class="plaintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			        <p><a href="#" class="btn btn-info btn-profile" role="button"><i class="fa fa-user"></i> Profile</a></p>
 			      </div>
 			    </div>
@@ -139,8 +230,8 @@
 			    <div class="thumbnail text-center">
 			      <img class="img-circle" src="../bootbundle_f/assets/photos/randomuser.me/women8.jpg" alt="yoga instructor">
 			      <div class="caption">
-			        <h4>Mary Shmoe</h4>
-			        <p>I'm a chiropractor turned yoga nut! My favorite styles...</p>
+			        <h4>Mary</h4>
+			        <p class="plaintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			        <p><a href="#" class="btn btn-info btn-profile" role="button"><i class="fa fa-user"></i> Profile</a></p>
 			      </div>
 			    </div>
@@ -212,6 +303,50 @@
 	        scrollTop: $("#copy").offset().top
 		    }, 1500);
 			});
+
+			$('#loginbtn').click(function(){
+				$('#loginModal').modal({show:true});
+			});
+
+
+			$('.modal').on('hidden.bs.modal', function( event ) {
+        $(this).removeClass( 'fv-modal-stack' );
+        $('body').data( 'fv_open_modals', $('body').data( 'fv_open_modals' ) - 1 );
+      });
+
+
+			$( '.modal' ).on( 'shown.bs.modal', function ( event ) {
+                   
+                   // keep track of the number of open modals
+                   
+                   if ( typeof( $('body').data( 'fv_open_modals' ) ) == 'undefined' )
+                   {
+                     $('body').data( 'fv_open_modals', 0 );
+                   }
+                   
+                     
+                   // if the z-index of this modal has been set, ignore.
+                        
+                if ( $(this).hasClass( 'fv-modal-stack' ) )
+                        {
+                        return;
+                        }
+                   
+                $(this).addClass( 'fv-modal-stack' );
+
+                $('body').data( 'fv_open_modals', $('body').data( 'fv_open_modals' ) + 1 );
+
+                $(this).css('z-index', 1040 + (10 * $('body').data( 'fv_open_modals' )));
+
+                $( '.modal-backdrop' ).not( '.fv-modal-stack' )
+                        .css( 'z-index', 1039 + (10 * $('body').data( 'fv_open_modals' )));
+
+
+                $( '.modal-backdrop' ).not( 'fv-modal-stack' )
+                        .addClass( 'fv-modal-stack' ); 
+
+                 });
+
     });
   </script>
 
