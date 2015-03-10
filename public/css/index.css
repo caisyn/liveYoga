@@ -1,0 +1,120 @@
+.lead, p, a{
+	font-family: muli, sans-serif;
+	letter-spacing: 0px;
+}
+p, a{
+	font-size: 16px;
+}
+a{
+	color: rgb(0,176,190);
+}
+a:hover {
+	text-decoration: none;
+}
+.btn .btn-info{
+	background-color: rgb(0,176,190);
+}
+nav.navbar{
+	height: 70px;
+	margin-bottom: 0;
+}
+.navbar-brand{
+	margin-top: 11px;
+	text-indent: 30px;
+	font-size: 200%;
+	letter-spacing: .07em;
+}
+a.navbar-brand{
+	color: white;
+	font-weight: bold;
+	font-family: poiret-one, sans-serif;
+}
+.navlinks{
+	margin-top: 11px;
+}
+.navlinks a{
+	font-weight: normal;
+}
+.feature-element{
+	margin: 0;
+	height: 100vh;
+}
+.logo {
+	background: url(../img/logo.png) left no-repeat;
+	background-size: 100%;
+	width: 50px;
+	height: 50px;
+}
+.feature-imgs{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.feature-center{
+	border-radius: 100%;
+	border: solid rgb(30,30,30) 1px;
+	position: relative;
+	top: -32vh;
+	width: 77px;
+	height: 77px;
+	margin: 0 auto;
+	padding: 0 0 10px 0;
+	z-index: 20;
+	text-align: center;
+	background-color: rgb(35,35,35); 
+	background-color: rgba(40,40,40,0.6);
+}
+.fa-angle-down:before {
+	position: relative;
+	top: -13px;
+	left: -13px;
+	content: "\f107";
+	margin: 0;
+	padding: 0;
+	color: rgb(0,176,190);
+	text-shadow: 0 3px rgb(37,37,37);
+}
+.fadeImg1{
+	height: 100%;
+	width: 100%;
+}
+.fadeImg2{
+	height: 100%;
+	width: 100%;
+}
+#copy{
+	background-color: #F1F1F1;
+	border-bottom: solid 1px #d1d1d1;
+	margin: 0 0 50px 0; 
+}
+.media .img-quote{
+	overflow: hidden;
+	height: 125px;
+	width: 106px;
+	border-right: solid 4px rgb(0,176,190);
+	padding-right: 27px;
+	max-height: 125px;
+}
+.well.well-lg{
+	border-top: solid 1px #d1d1d1;
+	border-bottom: solid 1px #d1d1d1;
+}
+.col-md-2 .thumbnail{
+	border-radius: 10px;
+	background-color: #F1F1F1;
+	border: 0;
+	min-height: 300px;
+	max-height: 400px;
+}
+.teachers.well-lg{
+	margin: 30px 0 30px 0;
+	padding: 20px;
+	background-color: #F1F1F1;
+	border-bottom: solid 1px #d1d1d1;
+}
+.thumbnail p{
+	font-size: 14px;
+}
+.thumbnail .caption .btn-profile{
+	vertical-align: bottom;
+}
