@@ -17,14 +17,20 @@
 <body>
   <nav class='navbar navbar-default navbar-static-top'>
     <div class='container'>
-    	<div class='navbar-header'>
+    	<div>
 	      <a href='index.html'><div class='logo img-circle navbar-brand'>
 	      	<span class='sr-only'>My Live Yoga</span>
 	      </div></a>
 	      <a href='index.html' class='navbar-brand'>MyLive Yoga</a>
 	    </div>
 	    <div class="navlinks">
-	      <ul class='nav navbar-nav navbar-right'>
+	    	<button type="button" class="navbar-toggle">
+	    		<span class="sr-only">Toggle navigation</span>
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+	      <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
 	        <li class="">
 	        	<a data-toggle="modal" href="#loginModal">Login</a>
 	        	<div class="modal" id="loginModal">
@@ -50,7 +56,6 @@
 										        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
 										      </div>
 										    </div>
-										    <legend></legend>
 										 		<legend>Register</legend>
 										 		<div class="form-group">
 										      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
@@ -259,7 +264,6 @@
             <li><a href='media.html'>The Buzz</a></li>
           </ul>
         </div>
-
         <div class='clearfix visible-xs'></div>
 
         <div class='col-sm-2 col-xs-6'>
@@ -308,46 +312,7 @@
 			$('#loginbtn').click(function(){
 				$('#loginModal').modal({show:true});
 			});
-
-			$('.modal').on('hidden.bs.modal', function( event ) {
-        $(this).removeClass( 'fv-modal-stack' );
-        $('body').data( 'fv_open_modals', $('body').data( 'fv_open_modals' ) - 1 );
-      });
-
-
-			$( '.modal' ).on( 'shown.bs.modal', function ( event ) {
-                   
-                   // keep track of the number of open modals
-                   
-                   if ( typeof( $('body').data( 'fv_open_modals' ) ) == 'undefined' )
-                   {
-                     $('body').data( 'fv_open_modals', 0 );
-                   }
-                   
-                     
-                   // if the z-index of this modal has been set, ignore.
-                        
-                if ( $(this).hasClass( 'fv-modal-stack' ) )
-                        {
-                        return;
-                        }
-                   
-                $(this).addClass( 'fv-modal-stack' );
-
-                $('body').data( 'fv_open_modals', $('body').data( 'fv_open_modals' ) + 1 );
-
-                $(this).css('z-index', 1040 + (10 * $('body').data( 'fv_open_modals' )));
-
-                $( '.modal-backdrop' ).not( '.fv-modal-stack' )
-                        .css( 'z-index', 1039 + (10 * $('body').data( 'fv_open_modals' )));
-
-
-                $( '.modal-backdrop' ).not( 'fv-modal-stack' )
-                        .addClass( 'fv-modal-stack' ); 
-
-                 });
-
-    });
+		});
   </script>
 
 </body>

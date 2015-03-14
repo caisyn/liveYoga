@@ -34,6 +34,11 @@ nav.navbar{
 	font-size: 200%;
 	letter-spacing: .07em;
 }
+.clear:after {
+	content:"";
+	clear:both;
+ 	display:block;
+}
 a.navbar-brand{
 	color: white;
 	font-weight: bold;
@@ -103,7 +108,6 @@ a.navbar-brand{
 	margin-left: 20px;
 	height: 133px;
 	width: 133px;
-	max-height: 125px;
 }
 .well.well-lg{
 	border-top: solid 1px #d1d1d1;
@@ -113,8 +117,6 @@ a.navbar-brand{
 	border-radius: 10px;
 	background-color: #F1F1F1;
 	border: 0;
-	min-height: 300px;
-	max-height: 100%;
 }
 .teachers.well-lg{
 	margin: 30px 0 30px 0;
@@ -124,7 +126,4 @@ a.navbar-brand{
 }
 .teachers .thumbnail .caption .btn-profile{
 	vertical-align: bottom;
-}
-div.modal-backdrop.in.fv-modal-stack{
-	z-index: -1 !important;
 }

@@ -8,6 +8,7 @@
 <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-route.min.js"></script>-->
 	<link rel="stylesheet" type="text/css" href="../public/css/bootswatch_yeti.min.css"/>
   <link rel="stylesheet" type="text/css" href="../public/css/profile.css"/>
+  <link rel="stylesheet" type="text/css" href="../public/css/social-buttons.css"/>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
   <link rel="shortcut icon" href="../public/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="../public/slick-1.4.1/slick/slick.css"/>
@@ -18,14 +19,20 @@
 <body>
   <nav class='navbar navbar-default navbar-static-top'>
     <div class='container'>
-    	<div class='navbar-header'>
+    	<div class="navbar-header">
 	      <a href='index.html'><div class='logo img-circle navbar-brand'>
 	      	<span class='sr-only'>My Live Yoga</span>
 	      </div></a>
 	      <a href='index.html' class='navbar-brand'>MyLive Yoga</a>
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	    		<span class="sr-only">Toggle navigation</span>
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
 	    </div>
 	    <div class="navlinks">
-	      <ul class='nav navbar-nav navbar-right'>
+	      <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
 	        <li class="">
 	        	<a data-toggle="modal" href="#loginModal">Login</a>
 	        	<div class="modal" id="loginModal">
@@ -51,7 +58,6 @@
 										        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
 										      </div>
 										    </div>
-										    <legend></legend>
 										 		<legend>Register</legend>
 										 		<div class="form-group">
 										      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
@@ -137,7 +143,7 @@
   	<div class="row">
   		
   	</div>
-  	<div class="sidebar col-sm-3">
+  	<div class="sidebar col-md-3 col-sm-12">
   		<div class="profilepic">
   			<div class="img-circle profile-img">
   				<img class="img-responsive" height="180px" width="180px" src="../bootbundle_f/assets/photos/randomuser.me/women11.jpg" alt="yoga instructor">
@@ -151,12 +157,17 @@
   			<p class="plaintext">I'm definitely your go-to yoga guru! Join me any weekday for one on one instruction. I can teach you anything from spins to standing styles. My love for yoga was born after a chance encounter with this guy on a beach in Cancun. Tate velit esse
   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  			<p>Styles: </p>
-  			<p>Experience: </p>
+  			<p>Styles: Anusara, Ashtanga, Restorative</p>
+  			<p>Experience: 7 years</p>
   			<p class="text-center"><a href="#" class="btn btn-info" role="button"><i class="fa fa-envelope"></i> Message</a></p>
+  			<p class="social-media-btn text-center"> 
+  				<a href="http://twitter.com/minimalmonkey" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a>
+					<a href="http://facebook.com" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a>
+					<a href="http://plus.google.com" class="icon-button google-plus"><i class="fa fa-google-plus"></i><span></span></a>
+				</p>
   		</div>
   	</div>
-  	<div class="content col-sm-9">
+  	<div class="content col-md-9 col-sm-12">
   		<div class="whitespace">
   			
   		</div>
@@ -174,56 +185,65 @@
 				  	</div>
 				  	<div class="schedule-content">
 				  		<div class="schedule-slot col-sm-9">
-				  			<img class="slot-img img-circle" src="../public/img/logo.png" width="88px" height="88px">
+				  			<img class="slot-img img-circle" src="../public/img/class.jpg" width="88px" height="88px">
 				  			<div class="slot-descrip">
 				  				<div class="slot-title">Spin Class - </div>
-				  					<div class="slot-date"> Monday, March 16, 2015 </div><div class="slot-time"><i class="fa fa-clock-o"></i> 6:00 - 7:00 PST</div>
-
+				  					<div class="slot-date"> Monday, March 16, 2015 </div>
+				  					<div class="slot-time visible-xs-block"><i class="fa fa-clock-o"></i> 6:00 - 7:00 PST</div>
 				  				<p class="plaintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				  				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				  				quis nostrud exercitation ullamco laboris nisi... <a href="#">See More</a></p>
 				  			</div>
-				  			<div class="slot-btn"><a href="#" class="btn btn-warning" role="button"><i class="fa fa-plus"></i> <span class="hidden-sm">Book</span></a></div>
+				  			<div class="slot-btn"><p>$35.00</p><a href="#" class="btn btn-warning" role="button"><i class="fa fa-plus"></i> <span class="hidden-sm hidden-xs">Book</span></a></div>
 				  		</div>
 				  		<div class="schedule-slot col-sm-9">
-				  			<img class="slot-img img-circle" src="../public/img/logo.png" width="88px" height="88px">
+				  			<img class="slot-img img-circle" src="../public/img/class.jpg" width="88px" height="88px">
 				  			<div class="slot-descrip">
-				  				<div class="slot-title">Spin Class - </div><div class="slot-date"> Tuesday, March 17, 2015 </div><div class="slot-time"><i class="fa fa-clock-o"></i> 6:00 - 7:00 PST</div>
+				  				<div class="slot-title">Spin Class - </div>
+				  				<div class="slot-date"> Tuesday, March 17, 2015 </div>
+				  				<div class="clearfix visible-xs"></div>
+				  				<div class="slot-time visible-xs-block"><i class="fa fa-clock-o"></i> 6:00 - 7:00 PST</div>
 				  				<p class="plaintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				  				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				  				quis nostrud exercitation ullamco laboris nisi... <a href="#">See More</a></p>
 				  			</div>
-				  			<div class="slot-btn"><a href="#" class="btn btn-warning" role="button"><i class="fa fa-plus"></i> <span class="hidden-sm">Book</span></a></div>
+				  			<div class="slot-btn"><p>$35.00</p><a href="#" class="btn btn-warning" role="button"><i class="fa fa-plus"></i> <span class="hidden-sm hidden-xs">Book</span></a></div>
 				  		</div>
 				  		<div class="schedule-slot col-sm-9">
-				  			<img class="slot-img img-circle" src="../public/img/logo.png" width="88px" height="88px">
+				  			<img class="slot-img img-circle" src="../public/img/class.jpg" width="88px" height="88px">
 				  			<div class="slot-descrip">
-				  				<div class="slot-title">Spin Class - </div><div class="slot-date"> Wednesday, March 18, 2015 </div><div class="slot-time"><i class="fa fa-clock-o"></i> 6:00 - 7:00 PST</div>
+				  				<div class="slot-title">Spin Class - </div>
+				  				<div class="slot-date"> Wednesday, March 18, 2015 </div>
+				  				<div class="slot-time visible-xs-block"><i class="fa fa-clock-o"></i> 6:00 - 7:00 PST</div>
 				  				<p class="plaintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				  				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				  				quis nostrud exercitation ullamco laboris nisi... <a href="#">See More</a></p>
 				  			</div>
-				  			<div class="slot-btn"><a href="#" class="btn btn-warning" role="button"><i class="fa fa-plus"></i> <span class="hidden-sm">Book</span></a></div>
+				  			<div class="slot-btn"><p>$35.00</p><a href="#" class="btn btn-warning" role="button"><i class="fa fa-plus"></i> <span class="hidden-sm hidden-xs">Book</span></a></div>
 				  		</div>
 				  		<div class="schedule-slot col-sm-9">
-				  			<img class="slot-img img-circle" src="../public/img/logo.png" width="88px" height="88px">
+				  			<img class="slot-img img-circle" src="../public/img/class.jpg" width="88px" height="88px">
 				  			<div class="slot-descrip">
-				  				<div class="slot-title">Spin Class - </div><div class="slot-date"> Thursday, March 19, 2015 </div><div class="slot-time"><i class="fa fa-clock-o"></i> 6:00 - 7:00 PST</div>
+				  				<div class="slot-title">Spin Class - </div>
+				  				<div class="slot-date"> Thursday, March 19, 2015 </div>
+				  				<div class="slot-time visible-xs-block"><i class="fa fa-clock-o"></i> 6:00 - 7:00 PST</div>
 				  				<p class="plaintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				  				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				  				quis nostrud exercitation ullamco laboris nisi... <a href="#">See More</a></p>
 				  			</div>
-				  			<div class="slot-btn"><a href="#" class="btn btn-warning" role="button"><i class="fa fa-plus"></i> <span class="hidden-sm">Book</span></a></div>
+				  			<div class="slot-btn"><p>$35.00</p><a href="#" class="btn btn-warning" role="button"><i class="fa fa-plus"></i> <span class="hidden-sm hidden-xs">Book</span></a></div>
 				  		</div>
 				  		<div class="schedule-slot col-sm-9">
-				  			<img class="slot-img img-circle" src="../public/img/logo.png" width="88px" height="88px">
+				  			<img class="slot-img img-circle" src="../public/img/class.jpg" width="88px" height="88px">
 				  			<div class="slot-descrip">
-				  				<div class="slot-title">Spin Class - </div><div class="slot-date"> Friday, March 20, 2015 </div><div class="slot-time"><i class="fa fa-clock-o"></i> 6:00 - 7:00 PST</div>
+				  				<div class="slot-title">Spin Class - </div>
+				  				<div class="slot-date"> Friday, March 20, 2015 </div>
+				  				<div class="slot-time visible-xs-block"><i class="fa fa-clock-o"></i> 6:00 - 7:00 PST</div>
 				  				<p class="plaintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				  				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				  				quis nostrud exercitation ullamco laboris nisi... <a href="#">See More</a></p>
 				  			</div>
-				  			<div class="slot-btn"><a href="#" class="btn btn-warning" role="button"><i class="fa fa-plus"></i> <span class="hidden-sm">Book</span></a></div>
+				  			<div class="slot-btn"><p>$35.00</p><a href="#" class="btn btn-warning" role="button"><i class="fa fa-plus"></i> <span class="hidden-sm hidden-xs">Book</span></a></div>
 				  		</div> 				  	
 				  	</div>
 				  </div>
@@ -287,15 +307,6 @@
 	<script type="text/javascript" src="../public/slick-1.4.1/slick/slick.min.js"></script>
   <script>
     $(document).ready(function(){
-		  $('.feature-imgs').slick({
-			  infinite: true,
-			  speed: 1300,
-			  fade: true,
-			  cssEase: 'linear',
-			  autoplay: true,
-  			autoplaySpeed: 4000,
-  			pauseOnHover: false
-		  });
       $(function () {
 		    $('#myTab a:first').tab('show');
 		  });
@@ -303,45 +314,6 @@
 			$('#loginbtn').click(function(){
 				$('#loginModal').modal({show:true});
 			});
-
-			$('.modal').on('hidden.bs.modal', function( event ) {
-        $(this).removeClass( 'fv-modal-stack' );
-        $('body').data( 'fv_open_modals', $('body').data( 'fv_open_modals' ) - 1 );
-      });
-
-
-			$( '.modal' ).on( 'shown.bs.modal', function ( event ) {
-                   
-                   // keep track of the number of open modals
-                   
-                   if ( typeof( $('body').data( 'fv_open_modals' ) ) == 'undefined' )
-                   {
-                     $('body').data( 'fv_open_modals', 0 );
-                   }
-                   
-                     
-                   // if the z-index of this modal has been set, ignore.
-                        
-                if ( $(this).hasClass( 'fv-modal-stack' ) )
-                        {
-                        return;
-                        }
-                   
-                $(this).addClass( 'fv-modal-stack' );
-
-                $('body').data( 'fv_open_modals', $('body').data( 'fv_open_modals' ) + 1 );
-
-                $(this).css('z-index', 1040 + (10 * $('body').data( 'fv_open_modals' )));
-
-                $( '.modal-backdrop' ).not( '.fv-modal-stack' )
-                        .css( 'z-index', 1039 + (10 * $('body').data( 'fv_open_modals' )));
-
-
-                $( '.modal-backdrop' ).not( 'fv-modal-stack' )
-                        .addClass( 'fv-modal-stack' ); 
-
-                 });
-
     });
   </script>
 
