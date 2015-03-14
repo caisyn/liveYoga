@@ -1,3 +1,0 @@
-FontAwesome License
-
-MIT - http://opensource.org/licenses/mit-license.html
