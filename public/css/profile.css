@@ -32,7 +32,7 @@ nav.navbar{
 	font-size: 200%;
 	letter-spacing: .07em;
 }
-a.navbar-brand{
+.navbar-brand{
 	color: white;
 	font-weight: bold;
 	font-family: poiret-one, sans-serif;
@@ -79,11 +79,6 @@ a.navbar-brand{
 	width: 100%;
 	padding: 15px 20px;
 }
-.social-media-btn{
-	font-size: 16px;
-	vertical-align: ;
-	margin: 
-}
 .content{
 	padding: 0;
 }
@@ -128,7 +123,7 @@ a.navbar-brand{
 	vertical-align: top;
 }
 .slot-descrip{
-	width: 66%;
+	width: 68%;
 	height: 100px;
 	margin: 0 15px;
 	overflow: hidden;
@@ -144,14 +139,14 @@ a.navbar-brand{
 	font-size: 16px;
 }
 .slot-time{
-	display: inline-block;
+	display: inline;
 	float: right;
 	font-size: 16px;
 }
 .schedule-slot .slot-btn{
 	display: inline-block;
-	margin-left: 2%;
-	width: 50px;
+	margin-left: 1%;
+	width: 30px;
 	vertical-align: bottom;
 }
 .slot-btn p{

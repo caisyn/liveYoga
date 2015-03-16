@@ -46,6 +46,7 @@ a.navbar-brand{
 }
 .navlinks{
 	margin-top: 11px;
+	background-color: #333333;
 }
 .navlinks a{
 	font-weight: normal;
@@ -55,10 +56,13 @@ a.navbar-brand{
 	height: 100vh;
 }
 .logo {
-	background: url(../img/logo.png) left no-repeat;
+	background: url(../img/logo.png) no-repeat;
 	background-size: 100%;
 	width: 50px;
 	height: 50px;
+}
+.navbar-header button{
+	margin-top: 15px;
 }
 .feature-imgs{
 	width: 100%;
